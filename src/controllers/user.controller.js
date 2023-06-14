@@ -57,6 +57,24 @@ export const newUser = async (req, res, next) => {
     next(error);
   }
 };
+/**
+ * Controller to userLogin
+ * @param  {object} req - request object
+ * @param {object} res - response object
+ * @param {Function} next
+ */
+export const userLogin = async (req, res, next) => {
+  try {
+    const data = await UserService.userLogin(req.body);
+    res.status(HttpStatus.CREATED).json({
+      code: HttpStatus.CREATED,
+      data: data,
+      message: 'user Login successfully'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
 
 /**
  * Controller to update a user

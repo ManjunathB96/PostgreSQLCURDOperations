@@ -869,3 +869,433 @@ SequelizeConnectionError: password authentication failed for user "Levono"
     at readableAddChunk (node:internal/streams/readable:297:9)
     at Socket.Readable.push (node:internal/streams/readable:234:10)
     at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {"date":"Wed Jun 14 2023 12:22:21 GMT+0530 (India Standard Time)","error":{"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"}},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1680.265},"process":{"argv":["node","D:\\PostgreSQL\\CURDOperations\\src\\index.js"],"cwd":"D:\\PostgreSQL\\CURDOperations","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":126296,"external":1578571,"heapTotal":96223232,"heapUsed":47226504,"rss":135405568},"pid":6364,"uid":null,"version":"v18.16.0"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T06:52:21.610Z","trace":[{"column":24,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js","function":"Client._connectionCallback","line":191,"method":"_connectionCallback","native":false},{"column":19,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js","function":"Client._handleErrorWhileConnecting","line":327,"method":"_handleErrorWhileConnecting","native":false},{"column":19,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js","function":"Client._handleErrorMessage","line":347,"method":"_handleErrorMessage","native":false},{"column":28,"file":"node:events","function":"Connection.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Connection.emit","line":489,"method":"emit","native":false},{"column":12,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js","function":null,"line":117,"method":null,"native":false},{"column":9,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts","function":"Parser.parse","line":104,"method":"parse","native":false},{"column":48,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts","function":null,"line":7,"method":null,"native":false},{"column":28,"file":"node:events","function":"Socket.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Socket.emit","line":489,"method":"emit","native":false},{"column":12,"file":"node:internal/streams/readable","function":"addChunk","line":324,"method":null,"native":false},{"column":9,"file":"node:internal/streams/readable","function":"readableAddChunk","line":297,"method":null,"native":false},{"column":10,"file":"node:internal/streams/readable","function":"Socket.Readable.push","line":234,"method":"push","native":false},{"column":23,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":190,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - JsonWebTokenError: invalid signature
+    at D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.verify (D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:101:10)
+    at _callee$ (D:\PostgreSQL\CURDOperations\src\middlewares\/auth.middleware.js:22:32)
+    at tryCatch (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at userAuth (D:\PostgreSQL\CURDOperations\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:284:15
+    at param (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\PostgreSQL\CURDOperations\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at D:\PostgreSQL\CURDOperations\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:231:16)
+    at done (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12) 
+    url - /api/v1/users/2 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2023-06-14T07:02:26.326Z"}
+error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:211:15)
+    at Function.post (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (D:\PostgreSQL\CURDOperations\src\routes\/user.route.js:13:8)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._compile (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.newLoader [as .js] (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (D:\PostgreSQL\CURDOperations\src\routes\/index.js:4:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._compile (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.newLoader [as .js] (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (D:\PostgreSQL\CURDOperations\src\/index.js:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._compile (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.newLoader [as .js] (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.runMain (node:internal/modules/run_main:81:12)
+    at Object.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\node\src\_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {"date":"Wed Jun 14 2023 12:33:42 GMT+0530 (India Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":2361.031},"process":{"argv":["node","D:\\PostgreSQL\\CURDOperations\\src\\index.js"],"cwd":"D:\\PostgreSQL\\CURDOperations","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":582867,"external":2013231,"heapTotal":93073408,"heapUsed":71492704,"rss":133730304},"pid":6824,"uid":null,"version":"v18.16.0"},"stack":"Error: Route.post() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as post] (D:\\PostgreSQL\\CURDOperations\\node_modules\\express\\lib\\router\\route.js:211:15)\n    at Function.post (D:\\PostgreSQL\\CURDOperations\\node_modules\\express\\lib\\router\\index.js:521:19)\n    at Object.<anonymous> (D:\\PostgreSQL\\CURDOperations\\src\\routes\\/user.route.js:13:8)\n    at Module._compile (node:internal/modules/cjs/loader:1254:14)\n    at Module._compile (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)\n    at Object.newLoader [as .js] (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:1117:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:958:12)\n    at Module.require (node:internal/modules/cjs/loader:1141:19)\n    at require (node:internal/modules/cjs/helpers:110:18)\n    at Object.<anonymous> (D:\\PostgreSQL\\CURDOperations\\src\\routes\\/index.js:4:1)\n    at Module._compile (node:internal/modules/cjs/loader:1254:14)\n    at Module._compile (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)\n    at Object.newLoader [as .js] (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:1117:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:958:12)\n    at Module.require (node:internal/modules/cjs/loader:1141:19)\n    at require (node:internal/modules/cjs/helpers:110:18)\n    at Object.<anonymous> (D:\\PostgreSQL\\CURDOperations\\src\\/index.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1254:14)\n    at Module._compile (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)\n    at Object.newLoader [as .js] (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:1117:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:958:12)\n    at Function.runMain (node:internal/modules/run_main:81:12)\n    at Object.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\@babel\\node\\src\\_babel-node.ts:222:12)\n    at Module._compile (node:internal/modules/cjs/loader:1254:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1308:10)\n    at Module.load (node:internal/modules/cjs/loader:1117:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:958:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n    at node:internal/main/run_main_module:23:47","timestamp":"2023-06-14T07:03:42.365Z","trace":[{"column":15,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\express\\lib\\router\\route.js","function":"Route.<computed> [as post]","line":211,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\express\\lib\\router\\index.js","function":"Function.post","line":521,"method":"post","native":false},{"column":8,"file":"D:\\PostgreSQL\\CURDOperations\\src\\routes\\/user.route.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1254,"method":"_compile","native":false},{"column":24,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1308,"method":".js","native":false},{"column":7,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1117,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":958,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1141,"method":"require","native":false},{"column":18,"file":"node:internal/modules/cjs/helpers","function":"require","line":110,"method":null,"native":false},{"column":1,"file":"D:\\PostgreSQL\\CURDOperations\\src\\routes\\/index.js","function":null,"line":4,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1254,"method":"_compile","native":false},{"column":24,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1308,"method":".js","native":false},{"column":7,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1117,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":958,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1141,"method":"require","native":false},{"column":18,"file":"node:internal/modules/cjs/helpers","function":"require","line":110,"method":null,"native":false},{"column":1,"file":"D:\\PostgreSQL\\CURDOperations\\src\\/index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1254,"method":"_compile","native":false},{"column":24,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1308,"method":".js","native":false},{"column":7,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1117,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":958,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.runMain","line":81,"method":"runMain","native":false},{"column":12,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\@babel\\node\\src\\_babel-node.ts","function":null,"line":222,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1254,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1308,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1117,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":958,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":81,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":23,"method":null,"native":false}]}
+error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:211:15)
+    at Function.post (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (D:\PostgreSQL\CURDOperations\src\routes\/user.route.js:13:8)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._compile (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.newLoader [as .js] (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (D:\PostgreSQL\CURDOperations\src\routes\/index.js:4:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._compile (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.newLoader [as .js] (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (D:\PostgreSQL\CURDOperations\src\/index.js:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._compile (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.newLoader [as .js] (D:\PostgreSQL\CURDOperations\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.runMain (node:internal/modules/run_main:81:12)
+    at Object.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\node\src\_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {"date":"Wed Jun 14 2023 12:33:46 GMT+0530 (India Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":2365.437},"process":{"argv":["node","D:\\PostgreSQL\\CURDOperations\\src\\index.js"],"cwd":"D:\\PostgreSQL\\CURDOperations","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":582867,"external":2013231,"heapTotal":93073408,"heapUsed":71537592,"rss":134410240},"pid":6916,"uid":null,"version":"v18.16.0"},"stack":"Error: Route.post() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as post] (D:\\PostgreSQL\\CURDOperations\\node_modules\\express\\lib\\router\\route.js:211:15)\n    at Function.post (D:\\PostgreSQL\\CURDOperations\\node_modules\\express\\lib\\router\\index.js:521:19)\n    at Object.<anonymous> (D:\\PostgreSQL\\CURDOperations\\src\\routes\\/user.route.js:13:8)\n    at Module._compile (node:internal/modules/cjs/loader:1254:14)\n    at Module._compile (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)\n    at Object.newLoader [as .js] (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:1117:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:958:12)\n    at Module.require (node:internal/modules/cjs/loader:1141:19)\n    at require (node:internal/modules/cjs/helpers:110:18)\n    at Object.<anonymous> (D:\\PostgreSQL\\CURDOperations\\src\\routes\\/index.js:4:1)\n    at Module._compile (node:internal/modules/cjs/loader:1254:14)\n    at Module._compile (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)\n    at Object.newLoader [as .js] (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:1117:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:958:12)\n    at Module.require (node:internal/modules/cjs/loader:1141:19)\n    at require (node:internal/modules/cjs/helpers:110:18)\n    at Object.<anonymous> (D:\\PostgreSQL\\CURDOperations\\src\\/index.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1254:14)\n    at Module._compile (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)\n    at Object.newLoader [as .js] (D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:1117:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:958:12)\n    at Function.runMain (node:internal/modules/run_main:81:12)\n    at Object.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\@babel\\node\\src\\_babel-node.ts:222:12)\n    at Module._compile (node:internal/modules/cjs/loader:1254:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1308:10)\n    at Module.load (node:internal/modules/cjs/loader:1117:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:958:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n    at node:internal/main/run_main_module:23:47","timestamp":"2023-06-14T07:03:46.769Z","trace":[{"column":15,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\express\\lib\\router\\route.js","function":"Route.<computed> [as post]","line":211,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\express\\lib\\router\\index.js","function":"Function.post","line":521,"method":"post","native":false},{"column":8,"file":"D:\\PostgreSQL\\CURDOperations\\src\\routes\\/user.route.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1254,"method":"_compile","native":false},{"column":24,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1308,"method":".js","native":false},{"column":7,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1117,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":958,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1141,"method":"require","native":false},{"column":18,"file":"node:internal/modules/cjs/helpers","function":"require","line":110,"method":null,"native":false},{"column":1,"file":"D:\\PostgreSQL\\CURDOperations\\src\\routes\\/index.js","function":null,"line":4,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1254,"method":"_compile","native":false},{"column":24,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1308,"method":".js","native":false},{"column":7,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1117,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":958,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1141,"method":"require","native":false},{"column":18,"file":"node:internal/modules/cjs/helpers","function":"require","line":110,"method":null,"native":false},{"column":1,"file":"D:\\PostgreSQL\\CURDOperations\\src\\/index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1254,"method":"_compile","native":false},{"column":24,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1308,"method":".js","native":false},{"column":7,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1117,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":958,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.runMain","line":81,"method":"runMain","native":false},{"column":12,"file":"D:\\PostgreSQL\\CURDOperations\\node_modules\\@babel\\node\\src\\_babel-node.ts","function":null,"line":222,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1254,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1308,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1117,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":958,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":81,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":23,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - Error: 
+    at Query.run (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at PostgresQueryInterface.select (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at Function.findAll (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:1824:21)
+    at Function.findOne (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:1998:12)
+    at Function.findByPk (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:1955:12) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T07:10:53.945Z"}
+error: 
+    status - 500 
+    message - Error: The argument passed to findOne must be an options object, use findByPk if you wish to pass a single primary key value
+    at Function.findOne (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:1972:13)
+    at _callee3$ (D:\PostgreSQL\CURDOperations\src\services\/user.service.js:21:27)
+    at tryCatch (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.apply (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.userLogin (D:\PostgreSQL\CURDOperations\src\services\/user.service.js:20:23)
+    at _callee4$ (D:\PostgreSQL\CURDOperations\src\controllers\/user.controller.js:68:36)
+    at tryCatch (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at userLogin (D:\PostgreSQL\CURDOperations\src\controllers\/user.controller.js:66:23)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\PostgreSQL\CURDOperations\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at D:\PostgreSQL\CURDOperations\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T07:11:58.745Z"}
+error: 
+    status - 500 
+    message - Error: Invalid credentials
+    at _callee3$ (D:\PostgreSQL\CURDOperations\src\services\/user.service.js:30:11)
+    at tryCatch (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T07:12:25.860Z"}
+error: 
+    status - 500 
+    message - Error: Invalid credentials
+    at _callee3$ (D:\PostgreSQL\CURDOperations\src\services\/user.service.js:32:11)
+    at tryCatch (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T07:14:19.975Z"}
+error: 
+    status - 500 
+    message - Error: secretOrPrivateKey must have a value
+    at Object.sign (D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\sign.js:105:20)
+    at _callee3$ (D:\PostgreSQL\CURDOperations\src\services\/user.service.js:27:29)
+    at tryCatch (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T07:16:33.984Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: invalid signature
+    at D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.verify (D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:101:10)
+    at _callee$ (D:\PostgreSQL\CURDOperations\src\middlewares\/auth.middleware.js:22:32)
+    at tryCatch (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at userAuth (D:\PostgreSQL\CURDOperations\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:284:15
+    at param (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\PostgreSQL\CURDOperations\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at D:\PostgreSQL\CURDOperations\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:231:16)
+    at done (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12) 
+    url - /api/v1/users/2 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2023-06-14T07:21:22.625Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: invalid signature
+    at D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.verify (D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:101:10)
+    at _callee$ (D:\PostgreSQL\CURDOperations\src\middlewares\/auth.middleware.js:22:32)
+    at tryCatch (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at userAuth (D:\PostgreSQL\CURDOperations\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:284:15
+    at param (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\PostgreSQL\CURDOperations\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at D:\PostgreSQL\CURDOperations\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:231:16)
+    at done (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12) 
+    url - /api/v1/users/login 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2023-06-14T07:21:41.824Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: invalid signature
+    at D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.verify (D:\PostgreSQL\CURDOperations\node_modules\jsonwebtoken\verify.js:101:10)
+    at _callee$ (D:\PostgreSQL\CURDOperations\src\middlewares\/auth.middleware.js:22:32)
+    at tryCatch (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at userAuth (D:\PostgreSQL\CURDOperations\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:284:15
+    at param (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\PostgreSQL\CURDOperations\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (D:\PostgreSQL\CURDOperations\node_modules\body-parser\lib\types\json.js:110:7)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:328:13)
+    at D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\PostgreSQL\CURDOperations\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (D:\PostgreSQL\CURDOperations\node_modules\express\lib\router\layer.js:95:5) 
+    url - /api/v1/users/2 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2023-06-14T07:22:13.856Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'email')
+    at _callee$ (D:\PostgreSQL\CURDOperations\src\middlewares\/auth.middleware.js:23:28)
+    at tryCatch (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\PostgreSQL\CURDOperations\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/2 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2023-06-14T07:23:19.073Z"}

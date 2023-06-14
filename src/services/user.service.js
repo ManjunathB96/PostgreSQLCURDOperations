@@ -1,6 +1,8 @@
 import sequelize, { DataTypes } from '../config/database';
 const User = require('../models/user')(sequelize, DataTypes);
-const bcrypt=require('bcrypt')
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+
 //get all users
 export const getAllUsers = async () => {
   const data = await User.findAll();
@@ -9,8 +11,20 @@ export const getAllUsers = async () => {
 
 //create new user
 export const newUser = async (body) => {
+  const hash = await bcrypt.hashSync(body.password, 10);
+  body.password = hash;
   const data = await User.create(body);
   return data;
+};
+//create new user
+export const userLogin = async (body) => {
+  const data = await User.findOne({ where: { email:body.email} });
+  if (data && bcrypt.compareSync(body.password, data.password)) {
+    const token = await jwt.sign({ id: data.id, email: data.email },process.env.SECRET_kEY);
+    return token;
+  } else {
+    throw new Error('Invalid credentials');
+  }
 };
 
 //update single user
