@@ -1,0 +1,211 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T03:34:33.828Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T03:34:33.948Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T03:36:08.265Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T03:36:08.424Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T03:38:52.444Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T03:38:52.548Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T03:39:00.064Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T03:39:00.182Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T03:51:28.399Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T03:51:28.517Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T05:12:02.962Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T05:12:03.086Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:27:26.826Z"}
+error: Could not connect to the database. password authentication failed for user "root" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":100,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":100,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"root\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T06:27:26.987Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:27:41.500Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T06:27:41.603Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:27:45.108Z"}
+error: Could not connect to the database. password authentication failed for user "user" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":100,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":100,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"user\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T06:27:45.212Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:28:15.047Z"}
+error: Could not connect to the database. password authentication failed for user "root" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":100,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":100,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"root\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T06:28:15.149Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:29:15.637Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:29:15.898Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:30:32.240Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:30:32.827Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:30:39.926Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:30:40.092Z"}
+error: 
+    status - 500 
+    message - Error: 
+    at Query.run (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at PostgresQueryInterface.select (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at Function.findAll (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:1824:21) 
+    url - /api/v1/users 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:30:54.071Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:31:26.131Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:31:29.486Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:31:33.201Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:31:36.670Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:31:40.129Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:31:43.158Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:31:48.311Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:31:51.365Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:31:51.561Z"}
+error: 
+    status - 500 
+    message - Error: 
+    at Query.run (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at PostgresQueryInterface.select (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at Function.findAll (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:1824:21) 
+    url - /api/v1/users 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:31:55.469Z"}
+error: 
+    status - 500 
+    message - Error: 
+    at Query.run (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at PostgresQueryInterface.insert (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\abstract\query-interface.js:795:21)
+    at user.save (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:4153:35)
+    at Function.create (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:2305:12) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:32:05.351Z"}
+error: 
+    status - 500 
+    message - Error: 
+    at Query.run (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at PostgresQueryInterface.insert (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\abstract\query-interface.js:795:21)
+    at user.save (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:4153:35)
+    at Function.create (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:2305:12) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:32:30.647Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token } in JSON at position 85
+    at JSON.parse (<anonymous>)
+    at parse (D:\PostgreSQL\CURDOperations\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\PostgreSQL\CURDOperations\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:231:16)
+    at done (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (D:\PostgreSQL\CURDOperations\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:33:27.003Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is required 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:33:33.954Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:33:46.873Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:33:47.091Z"}
+error: 
+    status - 500 
+    message - Error: 
+    at Query.run (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at PostgresQueryInterface.insert (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\abstract\query-interface.js:795:21)
+    at user.save (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:4153:35)
+    at Function.create (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:2305:12) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:34:14.360Z"}
+error: 
+    status - 500 
+    message - Error: 
+    at Query.run (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at PostgresQueryInterface.insert (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\abstract\query-interface.js:795:21)
+    at user.save (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:4153:35)
+    at Function.create (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:2305:12) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:36:55.537Z"}
+error: 
+    status - 500 
+    message - Error: 
+    at Query.run (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at PostgresQueryInterface.insert (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\abstract\query-interface.js:795:21)
+    at user.save (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:4153:35)
+    at Function.create (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:2305:12) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:37:42.079Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:38:41.566Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:38:41.794Z"}
+error: 
+    status - 500 
+    message - Error: 
+    at Query.run (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at PostgresQueryInterface.insert (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\abstract\query-interface.js:795:21)
+    at user.save (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:4153:35)
+    at Function.create (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:2305:12) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:38:44.348Z"}
+error: 
+    status - 500 
+    message - Error: 
+    at Query.run (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\postgres\query.js:76:25)
+    at D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at PostgresQueryInterface.insert (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\dialects\abstract\query-interface.js:795:21)
+    at user.save (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:4153:35)
+    at Function.create (D:\PostgreSQL\CURDOperations\node_modules\sequelize\src\model.js:2305:12) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-06-14T06:39:26.711Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:39:58.067Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:39:58.308Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:40:24.497Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:40:24.715Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:40:50.645Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:40:51.318Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:40:59.229Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:40:59.430Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:48:26.784Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T06:48:26.893Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:48:37.488Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T06:48:37.591Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:49:32.640Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T06:49:32.743Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:49:49.378Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:49:49.593Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:49:53.975Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:49:54.182Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:50:19.071Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:50:19.249Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:50:35.285Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:50:35.506Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:50:58.626Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T06:50:58.734Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:51:09.637Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:51:09.822Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:52:10.183Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:52:10.388Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:52:21.497Z"}
+error: Could not connect to the database. password authentication failed for user "Levono" {"name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":102,"line":"329","name":"error","routine":"auth_failed","severity":"FATAL"},"stack":"SequelizeConnectionError: password authentication failed for user \"Levono\"\n    at Client._connectionCallback (D:\\PostgreSQL\\CURDOperations\\node_modules\\sequelize\\src\\dialects\\postgres\\connection-manager.js:191:24)\n    at Client._handleErrorWhileConnecting (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:327:19)\n    at Client._handleErrorMessage (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\client.js:347:19)\n    at Connection.emit (node:events:513:28)\n    at Connection.emit (node:domain:489:12)\n    at D:\\PostgreSQL\\CURDOperations\\node_modules\\pg\\lib\\connection.js:117:12\n    at Parser.parse (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\parser.ts:104:9)\n    at Socket.<anonymous> (D:\\PostgreSQL\\CURDOperations\\node_modules\\pg-protocol\\src\\index.ts:7:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Socket.Readable.push (node:internal/streams/readable:234:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)","timestamp":"2023-06-14T06:52:21.605Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-06-14T06:52:35.703Z"}
+info: Connected to the database. {"timestamp":"2023-06-14T06:52:35.999Z"}
